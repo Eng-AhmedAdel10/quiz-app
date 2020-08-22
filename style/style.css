@@ -1,0 +1,196 @@
+
+  *
+  {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+  }
+  /* container */
+  .container
+  {
+      height: auto;
+      background-color: #eee;
+      margin: 20px auto;
+      padding: 15px;
+  }
+  /* boxStyle */
+  .container .boxStyle
+  {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  /* quizInfo */
+  .container .quizInfo
+  {
+      display: flex;
+      box-shadow: 0 0 5px 5px #ccc;
+  }
+  .container .quizInfo .category
+  {
+      flex: 1;
+      text-transform: capitalize;
+  }
+  .container .quizInfo .category span
+  {
+      text-transform: uppercase;
+  }
+  .container .quizInfo .questionsCount
+  {
+      flex:1;
+      text-align: right;
+      text-transform: capitalize;
+  }
+  /* questionArea */
+  .container .questionArea
+  {
+    margin: 15px 0;
+    text-transform: capitalize;
+  }
+  /* answerArea */
+  .container .answerArea .answer
+  {
+      padding: 15px;    
+      background-color: #eee;
+  }
+  .container .answerArea .answer:not(:last-child)
+  {
+      border-bottom: 1px solid #fff;
+  }
+  .container .answerArea .answer:first-child
+  {
+      border-radius: 10px 10px 0 0;
+  }
+  .container .answerArea .answer:last-child
+  {
+      border-radius: 0 0 10px 10px;
+  }
+  .container .answerArea .answer label
+  {
+      color: #888;
+      margin-left: 5px;
+  }
+  .container .answerArea .answer input[type="radio"]:checked + label
+  {
+    color: #00f;
+  }
+  /* btnSubmit */
+  .container .btnSubmit
+  {
+      width: 100%;
+      padding: 15px 0;
+      color: #fff;
+      font-weight: bold;
+      background-color: #00f;
+      margin: 15px 0;
+      border-radius: 10px;
+      text-transform: capitalize;
+      border: 0;
+      cursor: pointer;
+  }
+  .container .btnSubmit.disabled
+  {
+      cursor: not-allowed;
+  }
+  .container .btnSubmit:focus
+  {
+      outline: 0;
+  }
+  /* bulltes */
+  .container .bulltes
+  {
+      display: flex;
+  }
+  .container .bulltes .spans
+  {
+      flex:1;
+  }
+  .container .bulltes .spans span
+  {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #eee;
+      display: inline-block;
+      margin-right: 5px;
+  }
+  .container .bulltes .spans span.active
+  {
+      background-color: #00f;
+  }
+  /* status */
+  .container .status
+  {
+      margin-top: 15px;
+      display: none;
+  }
+  .container .status.active
+  {
+    display: block;
+  }
+  .container .status span
+  {
+      margin-left: 10px;
+      font-weight: bold;
+      text-transform: capitalize;
+      display: inline-block;
+  }
+  .container .status span.failed
+  {
+      color: red;
+  }
+  .container .status span.good
+  {
+      color: rgb(138, 219, 138);
+  }
+  .container .status span.flaunt
+  {
+      color:#00f;
+  }
+
+  /* media */
+  
+  @media (max-width: 575.98px) { 
+      .container
+      {
+          width:100%;
+          margin: 0 auto;
+      }
+      .container .questionArea
+      {
+          font-size: .75rem;
+      }
+   }
+  
+  
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+      .container
+      {
+          width:540px	;
+      }
+   }
+  
+  
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    .container
+    {
+        width:720px	;
+    }
+   }
+  
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .container
+    {
+        width:960px	;
+    }
+   }
+  
+  
+  @media (min-width: 1200px) { 
+    .container
+    {
+        width:1140px ;
+    }
+   }

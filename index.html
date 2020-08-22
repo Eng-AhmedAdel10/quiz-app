@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <!-- container -->
+      <div class="container">
+          <!--quizInfo-->
+          <div class="quizInfo boxStyle">
+              <div class="category">
+                Category: <span>html</span>
+              </div>
+              <div class="questionsCount">
+                questions count: <span></span>   
+              </div>
+          </div>
+          
+          <!-- questionArea -->
+          <div class="questionArea boxStyle"></div>
+
+          <!-- answerArea -->
+          <div class="answerArea boxStyle"> </div>
+
+          <!-- button submit -->
+          <button class="btnSubmit">submit answer</button>
+
+          <!-- bullets -->
+          <div class="bulltes boxStyle">
+              <div class="spans"></div>
+              <div class="timerQuestion"></div>
+          </div>
+
+          <!-- status -->
+          <div class="status boxStyle"> </div>
+      </div>
+
+         <!-- audio -->
+          <audio src="audio/success.mp3"id="success"type="audio/mpeg"></audio>
+          <audio src="audio/fail.mp3"id="fail"type="audio/mpeg"></audio>
+    <script src="app/app.js"></script>
+</body>
+</html>
